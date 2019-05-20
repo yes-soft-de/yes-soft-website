@@ -1,0 +1,252 @@
+/* Global All Fonts*/
+@import url('fonts.css');
+
+/* Global Main Color */
+:root {
+    --darker: #212322;
+    --dark:   #394240;
+    --white:  #F4F4F4;
+    --orange: #ee6825;
+    --blue:   #45a9b7;
+}
+
+
+/* ---- Start NavBar ---- */
+.navbar .navbar-brand {
+    width: 150px;
+}
+.navbar .quick-access {
+    cursor: pointer;
+    width:  70px;
+    height: 70px;
+}
+.navbar .quick-access div {
+    display: inline-flex;
+    color: var(--white);
+}
+.navbar .quick-access div i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  35px;
+    height: 35px;
+}
+.navbar .quick-access div:nth-child(2n) {
+    margin: -5px;
+}
+.navbar .quick-access div:nth-child(1) {
+    background-color: var(--dark);
+}
+.navbar .quick-access div:nth-child(2) {
+    background-color: var(--blue);
+}
+.navbar .quick-access div:nth-child(3) {
+    background-color: var(--orange);
+}
+.navbar .quick-access div:nth-child(4) {
+    background-color: var(--white);
+    color: #000;
+}
+/* ---- End NavBar ---- */
+
+/* ---- Start Home ---- */
+.home {
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+/*first section*/
+.home > div:first-child {
+    padding-top: 100px;
+}
+.home h1 {
+    font-family: 'Franklin Gothic Medium', fantasy;
+    font-weight: bolder;
+    font-size: 45px;
+}
+.home  h4 {
+    padding: 20px 0;
+    font-family: 'Franklin Gothic Book', fantasy;
+    font-size: 20px;
+}
+.home a {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Book', fantasy;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+/*second section*/
+.home img.yes-man-img {
+    height: 350px;
+    margin-top: 50px;
+    position: relative;
+}
+.home img.shadow-img {
+    z-index: -1;
+    position: absolute;
+    height: 270px;
+    bottom: -20vh;
+}
+@media (min-width: 1200px){
+    .home img.shadow-img {
+        right: -115%;
+    }
+}
+@media (max-width: 1200px){
+    .home img.shadow-img {
+        right: -155%;
+    }
+}
+@media (max-width: 991px){
+    .home img.shadow-img {
+        right: -220%;
+    }
+}
+@media (max-width: 767px){
+    .home div div div:nth-child(2) {
+        display: none;
+    }
+}
+/*idea*/
+.home .idea {
+    position: absolute;
+    left: 165px;
+    top: -80px;
+    list-style: none;
+}
+.home .idea li > div {
+    display: flex;
+    height: 100px;
+}
+.home .idea li > div > div {
+    padding-left: 20px;
+}
+.home .idea img {
+    width: 100px;
+    height: 100px;
+}
+.home .idea h5,
+.home .idea p {
+    font-family: 'Fredoka One', fantasy;
+}
+.home .idea h5 {
+    text-transform: uppercase;
+    width: max-content;
+    padding-top: 10px;
+    font-size: 18pt;
+}
+.home .idea .active h5 {
+    color: var(--orange);
+}
+.home .idea p {
+    text-transform: capitalize;
+    display: block;
+    padding-left: 15px;
+    font-size: 15pt;
+}
+.home .idea li:nth-child(1) {
+    transform: translateX(-80px);
+}
+.home .idea li:nth-child(2) {
+    transform: translateX(0);
+}
+.home .idea li:nth-child(3) {
+    transform: translateX(60px);
+}
+.home .idea li:nth-child(2) > div {
+    margin: 20px 0;
+}
+/* ---- End Home ---- */
+
+/* ---- Start About US ---- */
+.about-us {
+    background-color: var(--dark);
+    padding: 3rem 0;
+}
+.about-us h1 {
+    font-family: 'Franklin Gothic Medium', fantasy;
+    font-weight: bolder;
+    color: var(--orange);
+}
+.about-us p {
+    font-family: 'Franklin Gothic Book', fantasy;
+    font-size: 20px;
+    color: var(--white);
+}
+/* ---- End About US ---- */
+
+/* ---- Start Our Projects ---- */
+.our-project {
+    text-align: center;
+    padding: 3rem 0;
+}
+.our-project .title {
+    font-family: 'Franklin Gothic Medium', fantasy;
+    font-weight: bolder;
+    color: var(--orange);
+    font-size: 2.5rem;
+}
+.our-project .container > p {
+    font-family: 'Franklin Gothic Book', fantasy;
+    font-size: 20px;
+}
+.our-project .container > hr {
+    margin: 1rem auto 3rem;
+    border: 2px solid var(--orange);
+}
+/*card*/
+.our-project .card {
+    text-align: center;
+    border: none;
+    transition: all ease-in-out .3s;
+}
+.our-project .card h5 {
+    font-size: 2.5rem;
+}
+.our-project .card p {
+    font-size: 13pt;
+    font-family: 'Myriad Pro Light', sans-serif;
+}
+/*slick-slide*/
+.our-project .card.slick-slide.slick-current.slick-center  {
+    transform: scale(1);
+}
+.our-project .card.slick-slide.slick-active {
+    transform: scale(.8);
+}
+
+/* ---- End Our Projects ---- */
+
+/* ---- Start Service ---- */
+.service {
+    background-color: var(--dark);
+    padding: 3rem 0;
+}
+.service h2,
+.service h2 + p {
+    color: #FFF;
+}
+.service .card {
+    text-align: center;
+    padding: 3rem 1rem;
+    height: 482px;
+    width: 345px;
+}
+.service .card i {
+    font-size: 15rem;
+}
+.service .card.slick-slide.slick-center {
+    transform: scale(.8);
+}
+.service .card.slick-slide.slick-current.slick-center {
+    transform: scale(1);
+}
+.service .card.slick-slide.slick-current.slick-center i {
+    border: 10px solid var(--orange);
+}
+.service .service-carousal {}
+/* ---- End Service ---- */
+
+/* ---- Start footer ---- */
+
+/* ---- End footer ---- */
