@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<nav class="navbar navbar-light bg-transparent">
+<!--Start NavBar-->
+<nav class="navbar navbar-light bg-light bg-white sticky-top">
     <div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,25 +50,27 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#about-us">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#our-project">Projects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#contact-us">Contact Us</a>
             </li>
         </ul>
     </div>
 </nav>
+<!--End NavBar-->
 
-
-<div class="home">
+<!--Start Home-->
+<div class="home" id="home">
     <div class="container">
         <div class="row">
+            <!--First Section-->
             <div class="col-md-6">
                 <h1>COLOURED BUSINESS TEMPLATE</h1>
                 <h4>
@@ -81,12 +83,13 @@
                     <a href="#" class="btn btn-outline-dark">Discover</a>
                 </div>
             </div>
+            <!--Second Section-->
             <div class="col-6">
                 <div class="position-relative">
-                    <ul class="idea">
-                        <li>
-                            <div class="active">
-                                <img src="img/lamp-icon.svg" alt="lamp-icon">
+                    <ul class="idea" id="ideas">
+                        <li class="active">
+                            <div>
+                                <img src="img/lamp-active-icon.svg" alt="lamp-icon">
                                 <div>
                                     <h5>CUSTOM IDEAS</h5>
                                     <p>Lorem ipsum</p>
@@ -95,7 +98,7 @@
                         </li>
                         <li>
                             <div>
-                                <img src="img/brush-icon.svg" alt="brush-icon">
+                                <img src="img/brush-active-icon.svg" alt="brush-icon">
                                 <div>
                                     <h5>Nice Style</h5>
                                     <p>Lorem ipsum</p>
@@ -104,9 +107,9 @@
                         </li>
                         <li>
                             <div>
-                                <img src="img/like-icon.svg" alt="like-icon">
+                                <img src="img/like-active-icon.svg" alt="like-icon">
                                 <div>
-                                    <h5>customers satisfaction</h5>
+                                    <h5>Brand</h5>
                                     <p>Lorem ipsum</p>
                                 </div>
                             </div>
@@ -119,9 +122,10 @@
         </div>
     </div>
 </div>
+<!--End Home-->
 
-
-<div class="about-us">
+<!--Start About Us-->
+<div class="about-us" id="about-us">
     <div class="container text-center w-75">
         <h1>ABOUT US</h1>
         <p>
@@ -131,8 +135,10 @@
         </p>
     </div>
 </div>
+<!--End About Us-->
 
-<div class="our-project">
+<!--Start Our Project-->
+<div class="our-project" id="our-project">
     <div class="container">
         <h2 class="title">OUR PROJECTS</h2>
         <p>
@@ -180,9 +186,10 @@
         </div>
     </div>
 </div>
+<!--End Our Project-->
 
-
-<div class="service">
+<!--Start Services-->
+<div class="service" id="service">
     <div class="container">
        <div class="row">
            <div class="col-9 service-carousal">
@@ -210,20 +217,57 @@
            <div class="col-3 align-self-center py-3">
                <h2 class="title">SERVICES</h2>
                <p>
-                   In Order To Grow Up, Understand, <br>
-                   Live Happier, Nothing Compared <br>
+                   In Order To Grow Up, Understand,
+                   Live Happier, Nothing Compared
                    To Having The Ability To Have It All.
                </p>
            </div>
        </div>
     </div>
 </div>
+<!--End Services-->
 
+<!--Start Footer-->
+<div class="footer" id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <!--Brand-->
+            <div class="col-lg-2 col-md-12 col-sm-12 flex-column brand">
+                <img src="img/logo.svg" alt="">
+                <p>
+                    ENJOY PROFESSIONAL <br>
+                    TECHNOLOGY
+                </p>
+            </div>
+            <!--Quick Access + Website Map-->
+            <div class="col-lg-5 col-md-6 col-sm-12 quick-access">
+                <ul>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Legal Information</a></li>
+                    <li><a href="">Site Map</a></li>
+                </ul>
+                <p>
+                    &copy; 2019 YES-SOFT - All right reserved. <br>
+                    Designed By <a href="">Thabet El Debuch </a>.
+                </p>
+            </div>
+            <!--Social Media-->
+            <div class="col-lg-4 col-md-6 col-sm-12 social-media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp fa-fw"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Footer-->
 
-
-
-
-
+<!--JavaScript Files-->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

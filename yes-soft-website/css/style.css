@@ -3,6 +3,7 @@
 
 /* Global Main Color */
 :root {
+    scroll-behavior: smooth;
     --darker: #212322;
     --dark:   #394240;
     --white:  #F4F4F4;
@@ -14,6 +15,18 @@
 /* ---- Start NavBar ---- */
 .navbar .navbar-brand {
     width: 150px;
+}
+.navbar-collapse {
+    position: fixed;
+    left:0 ;
+    top: 86px;
+    z-index: 999;
+    width: 250px;
+    height: calc(100vh - 86px);
+    padding-left: 29px;
+    background: #f6f6f6;
+    transition: height ease-in .3s;
+    font-family: fantasy;
 }
 .navbar .quick-access {
     cursor: pointer;
@@ -114,12 +127,18 @@
     top: -80px;
     list-style: none;
 }
+.home .idea li {
+    transition: opacity ease-in-out 1s;
+}
 .home .idea li > div {
     display: flex;
     height: 100px;
 }
 .home .idea li > div > div {
     padding-left: 20px;
+}
+.home .idea li:not(.active) {
+    opacity: .2;
 }
 .home .idea img {
     width: 100px;
@@ -135,7 +154,7 @@
     padding-top: 10px;
     font-size: 18pt;
 }
-.home .idea .active h5 {
+.home .idea h5 {
     color: var(--orange);
 }
 .home .idea p {
@@ -155,6 +174,11 @@
 }
 .home .idea li:nth-child(2) > div {
     margin: 20px 0;
+}
+@media (max-width: 992px) {
+    .home .idea {
+        display: none;
+    }
 }
 /* ---- End Home ---- */
 
@@ -207,6 +231,10 @@
     font-size: 13pt;
     font-family: 'Myriad Pro Light', sans-serif;
 }
+.our-project .card img {
+    max-width: 400px;
+    margin: 0 auto;
+}
 /*slick-slide*/
 .our-project .card.slick-slide.slick-current.slick-center  {
     transform: scale(1);
@@ -224,9 +252,14 @@
 }
 .service h2,
 .service h2 + p {
+    font-family: 'Franklin Gothic Book', fantasy;
     color: #FFF;
 }
+.service h2 {
+    font-family: 'Franklin Gothic Medium', fantasy;
+}
 .service .card {
+    font-family: 'Franklin Gothic Book', fantasy;
     text-align: center;
     padding: 3rem 1rem;
     height: 482px;
@@ -235,18 +268,112 @@
 .service .card i {
     font-size: 15rem;
 }
+.service .card h5 {
+font-family: "Fredoka One",fantasy;
+font-size: 1.5rem;
+}
+.service .card p {
+    font-size: 1.1rem;
+}
 .service .card.slick-slide.slick-center {
+    transition: all ease-in-out .3s;
     transform: scale(.8);
+    color: #FFF;
+    background-color: var(--orange);
 }
 .service .card.slick-slide.slick-current.slick-center {
     transform: scale(1);
+    color: var(--dark);
+    background-color: var(--white);
 }
-.service .card.slick-slide.slick-current.slick-center i {
-    border: 10px solid var(--orange);
+
+@media (max-width: 992px) {
+    .service .row {
+        flex-direction: column-reverse;
+    }
+    .service .row > div {
+
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 }
-.service .service-carousal {}
 /* ---- End Service ---- */
 
 /* ---- Start footer ---- */
+@media (min-width: 992px) {
+    .col-md-2 {
+        flex:0 0 16.666667%;max-width:16.666667%
+    }
+    .col-md-5 {
+        flex:0 0 41.666667%;max-width:41.666667%
+    }
+    .col-md-4 {
+        flex:0 0 33.333333%;max-width:33.333333%
+    }
+}
 
+.footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid var(--dark);
+    padding: 3rem 0;
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer ul li {
+    display: inline-block;
+    margin: 10px 5px;
+}
+.footer a {
+    transition:
+            color .4s ease-in-out,
+            background-color .4s ease-in-out;
+    color: #000;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #535353;
+}
+.footer .brand {
+    align-self: center;
+}
+.footer .brand img {
+    width: 160px;
+}
+.footer .brand p {
+    font-family: 'Franklin Gothic Book', fantasy;
+    font-weight: bold;
+    font-size: 12px;
+}
+.footer .quick-access {
+    font-family: 'Franklin Gothic Book', fantasy;
+}
+.footer .quick-access ul {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', fantasy;
+    margin-bottom: 5px;
+}
+.footer .quick-access p {
+    padding-left: 10px;
+}
+.footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.footer .social-media ul li {
+    margin: 3px;
+}
+.footer .social-media ul li a {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--dark);
+    color: #FFF;
+}
+.footer .social-media ul li a:hover {
+    background-color: #000;
+}
 /* ---- End footer ---- */
