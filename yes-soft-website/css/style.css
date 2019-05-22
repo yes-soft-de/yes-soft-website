@@ -311,7 +311,7 @@
     padding: 2rem 1rem;
 }
 .contact-us .information > div:not(:last-of-type) {
-    margin-bottom: 1rem;
+    margin-bottom: 1.7rem;
 }
 .contact-us .information i {
     color: var(--white);
@@ -345,6 +345,15 @@
     border-radius: 0;
     background-color: transparent;
     font-weight: 600;
+}
+.contact-us button[type=submit] {
+    position: absolute;
+    right:1rem;
+    -webkit-transform: translateY(-2.4rem);
+    -moz-transform: translateY(-2.4rem);
+    -ms-transform: translateY(-2.4rem);
+    -o-transform: translateY(-2.4rem);
+    transform: translateY(-2.4rem);
 }
 /* ---- End Contact Us ---- */
 
