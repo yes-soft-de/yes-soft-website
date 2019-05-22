@@ -241,7 +241,6 @@
 .our-project .card.slick-slide.slick-active {
     transform: scale(.8);
 }
-
 /* ---- End Our Projects ---- */
 
 /* ---- Start Service ---- */
@@ -298,6 +297,57 @@
 }
 /* ---- End Service ---- */
 
+
+/* ---- Start Contact Us ---- */
+.contact-us {
+    font-family: Ubuntu,sans-serif;
+}
+/*contact information*/
+.contact-us h2{
+    color: #FFF;
+}
+.contact-us .information {
+    color: #FFF;
+    padding: 2rem 1rem;
+}
+.contact-us .information > div:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+.contact-us .information i {
+    color: var(--white);
+    padding-right: 1.5rem;
+}
+.contact-us ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 15px 0 25px;
+}
+.contact-us ul li {
+    display: inline-block;
+    margin: 5px 2px;
+}
+.contact-us .social-media li {
+    margin: 3px;
+}
+.contact-us .social-media li a {
+    padding: 7px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--blue);
+    cursor: pointer;
+}
+.contact-us .social-media li a:hover {
+    background-color: #FFF;
+}
+/*write to us*/
+.contact-us .form-control {
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-weight: 600;
+}
+/* ---- End Contact Us ---- */
+
 /* ---- Start footer ---- */
 @media (min-width: 992px) {
     .col-md-2 {
@@ -310,12 +360,12 @@
         flex:0 0 33.333333%;max-width:33.333333%
     }
 }
-
 .footer {
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     display: flex;
     justify-content: center;
-    border-top: 2px solid var(--dark);
+    /*border-top: 1px solid var(--gray);*/
     padding: 3rem 0;
 }
 .footer ul {
@@ -343,16 +393,12 @@
     width: 160px;
 }
 .footer .brand p {
-    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 12px;
 }
-.footer .quick-access {
-    font-family: 'Ubuntu', sans-serif;
-}
+.footer .quick-access {}
 .footer .quick-access ul {
     font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
     margin-bottom: 5px;
 }
 .footer .quick-access p {
