@@ -297,6 +297,56 @@
 }
 /* ---- End Service ---- */
 
+/* ---- Start Our Projects ---- */
+.our-teammate {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 3rem 0;
+}
+.our-teammate .title {
+    font-weight: bolder;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.our-teammate .container > p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.our-teammate .container > hr {
+    margin: 1rem auto 3rem;
+    border: 2px solid var(--orange);
+}
+/*card*/
+.our-teammate .card {
+    text-align: center;
+    border: none;
+    transition: all ease-in-out .3s;
+    background-color: #fbfbfb;
+}
+.our-teammate .card h5 {
+    font-size: 1.5rem;
+}
+.our-teammate .card p {
+    font-weight: bold;
+    font-size: 13pt;
+}
+.our-teammate .card img {
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+}
+.our-teammate .card i {
+    padding: .5rem;
+    color: var(--white);
+    background-color: var(--dark);
+    border-radius: 10px;
+    transition: background-color ease-in-out .3s;
+}
+.our-teammate .card i:hover {
+    background-color: var(--darker);
+}
+/* ---- End Our Projects ---- */
 
 /* ---- Start Contact Us ---- */
 .contact-us {
